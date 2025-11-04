@@ -1,0 +1,311 @@
+{
+  "main": {
+    "id": "e4ea98e908d5f962",
+    "type": "split",
+    "children": [
+      {
+        "id": "464f75915d5c3dd7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6ffc19c1865a42c1",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "empty",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "c87a8c1651f435ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Petani Kode/OOP/01-Memahami Konsep Dasar OOP (untuk Pemula).md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01-Memahami Konsep Dasar OOP (untuk Pemula)"
+            }
+          },
+          {
+            "id": "994f64c9c7f2b5f7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "2e1a8ac6b3c09f5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OOP Project/Managemen_keuangan/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "047fdaf98d210095",
+    "type": "split",
+    "children": [
+      {
+        "id": "d82e368ee9c464ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "04554e08cc1bd94b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "601fc64f077fb420",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "destructor",
+                "matchingCase": true,
+                "explainSearch": true,
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1b0aa742f2de9d7e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 266.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "5a2e04e3f27c45d3",
+    "type": "split",
+    "children": [
+      {
+        "id": "8db22185f832f694",
+        "type": "tabs",
+        "dimension": 29.417989417989414,
+        "children": [
+          {
+            "id": "ddbc58e96e17e8dc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "04-Data Structure/D-Queue/01-Queue Data Structure (geeksforgeeks.org).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 01-Queue Data Structure (geeksforgeeks.org)"
+            }
+          },
+          {
+            "id": "f75449668ba3cf32",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "93efce7ac2eff4c5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "406e6c1b3ee859cd",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "085bcb1cec5430c0",
+            "type": "leaf",
+            "state": {
+              "type": "tags-overview-view",
+              "state": {},
+              "icon": "tag",
+              "title": "Tags overview"
+            }
+          },
+          {
+            "id": "79043daadebb42d8",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 5
+      },
+      {
+        "id": "7cf76667223e7faa",
+        "type": "tabs",
+        "dimension": 70.58201058201058,
+        "children": [
+          {
+            "id": "b926b8ed78989612",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "OOP Project/Managemen_keuangan/README.md",
+                "followCursor": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 411.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "graph:Open graph view": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "tags-overview:Tags overview": false,
+      "dashboard-navigator:Open dashboard navigator": false,
+      "iconic:Open rulebook": false,
+      "quickadd:QuickAdd": false,
+      "open-gate:ChatGPT": false
+    }
+  },
+  "active": "2e1a8ac6b3c09f5a",
+  "lastOpenFiles": [
+    "OOP Project/Managemen_keuangan/java-file/managemen-keuangan/src/Riwayat.java",
+    "OOP Project/Managemen_keuangan/java-file/managemen-keuangan/out/production/managemen-keuangan/Transaksi.class",
+    "OOP Project/Managemen_keuangan/java-file/managemen-keuangan/out/production/managemen-keuangan/Main.class",
+    "OOP Project/Managemen_keuangan/java-file/managemen-keuangan/out/production/managemen-keuangan",
+    "OOP Project/Managemen_keuangan/java-file/managemen-keuangan/out/production",
+    "OOP Project/Managemen_keuangan/java-file/managemen-keuangan/out",
+    "OOP Project/Managemen_keuangan/java-file/managemen-keuangan/src/Transaksi.java",
+    "OOP Project/Managemen_keuangan/java-file/managemen-keuangan/src/Pengeluaran.java~",
+    "Petani Kode/OOP/01-Memahami Konsep Dasar OOP (untuk Pemula).md",
+    "OOP Project/Managemen_keuangan/java-file/managemen-keuangan/src/Pengeluaran.java",
+    "OOP Project/Managemen_keuangan/java-file/managemen-keuangan/src/pengeluaran.java",
+    "01-Memahami Konsep Dasar OOP (untuk Pemula)-16.png",
+    "01-Memahami Konsep Dasar OOP (untuk Pemula)-15.png",
+    "01-Memahami Konsep Dasar OOP (untuk Pemula)-14.png",
+    "01-Memahami Konsep Dasar OOP (untuk Pemula)-13.png",
+    "01-Memahami Konsep Dasar OOP (untuk Pemula)-12.png",
+    "01-Memahami Konsep Dasar OOP (untuk Pemula)-11.png",
+    "01-Memahami Konsep Dasar OOP (untuk Pemula)-10.png",
+    "01-Memahami Konsep Dasar OOP (untuk Pemula)-9.png",
+    "01-Memahami Konsep Dasar OOP (untuk Pemula)-8.png",
+    "01-Memahami Konsep Dasar OOP (untuk Pemula)-7.png",
+    "Dunia Ilkom/01-Pengertian Bahasa Java/Untitled.md",
+    "Petani Kode/OOP",
+    "DELIBERATE PRACTICE/1% Typer/How I Type REALLY Fast (156 Words per Minute).md",
+    "DELIBERATE PRACTICE/1% Typer/Untitled.md",
+    "Codeforces-Death Ground/1200/327A-Flipping Game.md",
+    "Codeforces-Death Ground/Report CF-DeathGround 800.md",
+    "Codeforces-Death Ground/1200/433B-Kuriyama Mirai's Stones.md",
+    "Codeforces-Death Ground/1200/Untitled 1.md",
+    "!Important Notes/My Task.md",
+    "Codeforces-Death Ground/1200/489B-BerSU Ball.md",
+    "Codeforces-Death Ground/1200/474B-Worms.md",
+    "Codeforces-Death Ground/1200/1520D-Same Differences.md",
+    "Codeforces-Death Ground/1200/Untitled.md",
+    "Codeforces-Death Ground/1200/492B-Vanya and Lanterns.md",
+    "Codeforces-Death Ground/1200/466A-Cheap Travel.md",
+    "Codeforces-Death Ground/1200/1352C-K-th Not Divisible by n.md",
+    "Codeforces-Death Ground/1200/514A-Chewbaсca and Number.md",
+    "Codeforces-Death Ground/1200/1343C-Alternating Subsequence.md",
+    "Codeforces-Death Ground/1200/459A-Pashmak and Garden.md",
+    "14-Tree Algorithm/A-Basic - Programmiz/03-Binary Tree/Latihan/03-Like Child Like Parent.md",
+    "03-Sorting/A_sort-Bubble Sort/Problem archive/Exercise/03PS-STBS-E001_Bubble sort yang dioptimalkan.md",
+    "03-Sorting/A_sort-Bubble Sort/Problem archive/Exercise/03PS-STBS-E004_Urutan Terbesar ke Terkecil.md",
+    "03-Sorting/D_sort-Merge Sort/Problem archive/Exercise/03PS-STMSE0001.md",
+    "03-Sorting/D_sort-Merge Sort/Merge Sort Algorithm.md",
+    "04-Data Structure/01-Linear/Singly Linked-List/Singly Linked List (Geeks).md",
+    "DELIBERATE PRACTICE/Untitled.canvas",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "Canvas/01-introduction.canvas",
+    "Pohon Competitive Programming.canvas",
+    "ZZZ Uncotegorized file/Big plan.canvas",
+    "Mata Kuliah Terkait/Semester 1/1. Manajemen data dan Informasi/modelbisnis.canvas",
+    "Mata Kuliah Terkait/Semester 1/1. Manajemen data dan Informasi/Tanpa judul.canvas"
+  ]
+}
