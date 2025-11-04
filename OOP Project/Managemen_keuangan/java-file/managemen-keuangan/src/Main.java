@@ -10,6 +10,9 @@ public class Main {
         System.out.println("== PROGRAM MANAGEMEN KEUANGAN PRIBADI ==");
         System.out.println("1. Pemasukan");
         System.out.println("2. Pengeluaran");
+        System.out.println("3. Cek Saldo");
+
+
         System.out.println("3. Tabungan");
         System.out.println("4. Analisis");
         System.out.println("5. Riwayat");
@@ -20,6 +23,10 @@ public class Main {
         System.out.println("\n");
         if(pil == 1){
             trans.pemasukan();
+        } else if(pil == 2){
+          trans.pengeluaran();
+        } else if(pil == 3){
+            trans.cekSaldo();
         } else if(pil == 5){
             trans.tampilRiwayat();
         }

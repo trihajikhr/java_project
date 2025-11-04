@@ -10,6 +10,7 @@ public class Transaksi {
 
     Scanner scan = new Scanner(System.in);
 
+    // ini pemasukan cuy!
     public void pemasukan() {
         long val;
         String sumber;
@@ -18,7 +19,7 @@ public class Transaksi {
         System.out.println("=== PEMASUKAN ===");
         while (true) {
             try {
-                System.out.print("Masukkan Nominal : ");
+                System.out.print("Masukkan Nominal  : ");
                 val = scan.nextLong();
                 break;
             } catch (InputMismatchException e) {
@@ -32,10 +33,41 @@ public class Transaksi {
 
         Riwayat data = new Riwayat(val, sumber, tanggal, 1);
         riwayat.add(data);
+        this.nominal = this.nominal + val;
+        System.out.println("\n");
     }
 
-    public void pengeluaran(int val, String kategori){
-         this.nominal = this.nominal - val;
+    // nah yang ini pengeluaran cuy
+    public void pengeluaran(){
+        long val;
+        String alasan;
+        String tanggal = LocalDateTime.now().toString();
+
+        System.out.println("=== PENGELUARAN ===");
+        while (true) {
+            try {
+                System.out.print("Masukkan Nominal  : ");
+                val = scan.nextLong();
+
+                // TODO: Ubah ke rupiah nanti
+                if(nominal - val < 50) {
+                    System.out.println("Saldo kurang!\n");
+                    continue;
+                }
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println("Input tidak valid!");
+                scan.nextLine();
+            }
+        }
+        scan.nextLine();
+        System.out.print("Jenis Pengeluaran : ");
+        alasan = scan.nextLine();
+
+        Riwayat data = new Riwayat(val, alasan, tanggal, 0);
+        riwayat.add(data);
+        this.nominal = this.nominal - val;
+        System.out.println("\n");
     }
 
     public void tampilRiwayat() {
@@ -52,5 +84,10 @@ public class Transaksi {
             System.out.println("Sumber transaksi    : " + riwayat.get(i).sumber);
             System.out.println("Tanggal transaksi   : " + riwayat.get(i).date + "\n");
         }
+    }
+
+    public void cekSaldo(){
+        System.out.println("=== CEK SALD0 ===");
+        System.out.println("Saldo sekarang: " + this.nominal + "\n");
     }
 }
