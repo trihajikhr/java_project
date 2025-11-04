@@ -26,6 +26,7 @@ public class Transaksi {
                 scan.nextLine();
             }
         }
+        scan.nextLine();
         System.out.print("Masukan Sumber    : ");
         sumber = scan.nextLine();
 
@@ -40,8 +41,16 @@ public class Transaksi {
     public void tampilRiwayat() {
         System.out.println("=== TAMPIL RIWAYAT ===");
         for(int i=0; i<riwayat.size(); i++){
-            System.out.println("Transaksi ke-" + (i+1));
-            System.out.println("Tipe transaksi: " + );
+            System.out.println("Transaksi ke        : " + (i+1));
+            System.out.print("Tipe transaksi      : ");
+            if(riwayat.get(i).tipe == 1) {
+                System.out.println("Pemasukan");
+            } else {
+                System.out.println("Pengeluaran");
+            }
+            System.out.println("Nominal transaksi   : " + riwayat.get(i).nominal);
+            System.out.println("Sumber transaksi    : " + riwayat.get(i).sumber);
+            System.out.println("Tanggal transaksi   : " + riwayat.get(i).date + "\n");
         }
     }
 }

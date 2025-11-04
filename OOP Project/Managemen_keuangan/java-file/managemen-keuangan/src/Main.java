@@ -20,6 +20,8 @@ public class Main {
         System.out.println("\n");
         if(pil == 1){
             trans.pemasukan();
+        } else if(pil == 5){
+            trans.tampilRiwayat();
         }
 
     } while(pil != 0);
