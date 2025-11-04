@@ -11,11 +11,9 @@ public class Main {
         System.out.println("1. Pemasukan");
         System.out.println("2. Pengeluaran");
         System.out.println("3. Cek Saldo");
-
-
-        System.out.println("3. Tabungan");
-        System.out.println("4. Analisis");
-        System.out.println("5. Riwayat");
+        System.out.println("4. Tabungan");
+        System.out.println("5. Analisis");
+        System.out.println("6. Riwayat");
         System.out.println("0. Keluar");
         System.out.print("Masukan pilihan anda: ");
         pil = scan.nextInt();
@@ -28,6 +26,8 @@ public class Main {
         } else if(pil == 3){
             trans.cekSaldo();
         } else if(pil == 5){
+            trans.analisis();
+        } else if(pil == 6){
             trans.tampilRiwayat();
         }
 

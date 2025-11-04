@@ -11,10 +11,10 @@ public class Transaksi {
     Scanner scan = new Scanner(System.in);
 
     // ini pemasukan cuy!
-    public void pemasukan() {
+    void pemasukan() {
         long val;
         String sumber;
-        String tanggal = LocalDateTime.now().toString();
+        LocalDateTime tanggal = LocalDateTime.now();
 
         System.out.println("=== PEMASUKAN ===");
         while (true) {
@@ -38,10 +38,10 @@ public class Transaksi {
     }
 
     // nah yang ini pengeluaran cuy
-    public void pengeluaran(){
+    void pengeluaran(){
         long val;
         String alasan;
-        String tanggal = LocalDateTime.now().toString();
+        LocalDateTime tanggal = LocalDateTime.now();
 
         System.out.println("=== PENGELUARAN ===");
         while (true) {
@@ -52,8 +52,15 @@ public class Transaksi {
                 // TODO: Ubah ke rupiah nanti
                 if(nominal - val < 50) {
                     System.out.println("Saldo kurang!\n");
+                    System.out.print("0:Cancel - 1:Lanjut: ");
+                    int next = scan.nextInt();
+                    if(next == 0) {
+                        return;
+                    }
                     continue;
                 }
+
+                val = val * -1;
                 break;
             } catch (InputMismatchException e) {
                 System.out.println("Input tidak valid!");
@@ -70,7 +77,8 @@ public class Transaksi {
         System.out.println("\n");
     }
 
-    public void tampilRiwayat() {
+    // bagian tampil riwayat sih
+    void tampilRiwayat() {
         System.out.println("=== TAMPIL RIWAYAT ===");
         for(int i=0; i<riwayat.size(); i++){
             System.out.println("Transaksi ke        : " + (i+1));
@@ -86,8 +94,65 @@ public class Transaksi {
         }
     }
 
+    // bagian cek saldo aja sih
     public void cekSaldo(){
         System.out.println("=== CEK SALD0 ===");
         System.out.println("Saldo sekarang: " + this.nominal + "\n");
+    }
+
+    // fungsi untuk analisis, tapi lumyaan susah
+    void analisisHelper(long sum) {
+        if(sum == 0){
+            System.out.println("Saldo Anda Tetap\n");
+        } else if(sum > 0){
+            System.out.println("Saldo Anda Bertambah, Pertahankan!\n");
+        } else if(sum < 0){
+            System.out.println("Saldo Anda Berkurang, Lebih Hemat!\n");
+        }
+    }
+    void analisis(){
+        System.out.println("=== ANALISIS ===");
+        if(riwayat.isEmpty()){
+            System.out.println("Tidak ada Riwayat Transaksi\n");
+            return;
+        }
+
+        System.out.println("Pilih hari analisis: ");
+        System.out.println("1. Hari");
+        System.out.println("2. Minggu");
+        System.out.println("3. Bulan");
+        System.out.print("Pilihan anda: ");
+        int pil =  scan.nextInt();
+
+        LocalDateTime now = LocalDateTime.now();
+        long sum=0;
+        if(pil == 1){
+            LocalDateTime batas24Jam = LocalDateTime.now().minusHours(24);
+            for (Riwayat r : riwayat) {
+                if (r.date.isAfter(batas24Jam)) {
+                    sum += r.nominal;
+                }
+            }
+            System.out.println("Transaksi selama 24 jam: " + sum);
+            analisisHelper(sum);
+        } else if(pil == 2){
+            LocalDateTime batas7Hari = LocalDateTime.now().minusDays(7);
+            for (Riwayat r : riwayat) {
+                if(r.date.isAfter(batas7Hari)) {
+                    sum += r.nominal;
+                }
+            }
+            System.out.println("Transaksi selama 7 hari: " + sum);
+            analisisHelper(sum);
+        } else if (pil == 3){
+            LocalDateTime batas30Hari =  LocalDateTime.now().minusDays(30);
+            for(Riwayat r : riwayat){
+                if(r.date.isAfter(batas30Hari)) {
+                    sum += r.nominal;
+                }
+            }
+            System.out.println("Transaksi selama 30 hari: " + sum);
+            analisisHelper(sum);
+        }
     }
 }

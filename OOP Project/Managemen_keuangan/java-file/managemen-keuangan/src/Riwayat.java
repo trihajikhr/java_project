@@ -1,10 +1,12 @@
+import java.time.LocalDateTime;
+
 public class Riwayat {
     public int tipe;
     public long nominal;
     public String sumber;
-    public String date;
+    LocalDateTime date;
 
-    Riwayat(long val, String sum, String date, int tipe){
+    Riwayat(long val, String sum, LocalDateTime date, int tipe){
         this.nominal = val;
         this.sumber = sum;
         this.date = date;
