@@ -7,17 +7,7 @@ public class Main {
     Transaksi trans = new Transaksi();
     int pil = 1;
     do {
-        System.out.println("== PROGRAM MANAGEMEN KEUANGAN PRIBADI ==");
-        System.out.println("1. Pemasukan");
-        System.out.println("2. Pengeluaran");
-        System.out.println("3. Cek Saldo");
-        System.out.println("4. Tabungan");
-        System.out.println("5. Analisis");
-        System.out.println("6. Riwayat");
-        System.out.println("0. Keluar");
-        System.out.print("Masukan pilihan anda: ");
-        pil = scan.nextInt();
-
+        pil = trans.mainMenu();
         System.out.println("\n");
         if(pil == 1){
             trans.pemasukan();
@@ -25,12 +15,13 @@ public class Main {
           trans.pengeluaran();
         } else if(pil == 3){
             trans.cekSaldo();
+        }  else if(pil == 4) {
+            trans.rencanaTabungan();
         } else if(pil == 5){
             trans.analisis();
         } else if(pil == 6){
             trans.tampilRiwayat();
         }
-
     } while(pil != 0);
     }
 }

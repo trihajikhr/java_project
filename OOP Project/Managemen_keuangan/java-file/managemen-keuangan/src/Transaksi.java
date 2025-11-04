@@ -4,14 +4,28 @@ import java.util.ArrayList;
 import java.time.LocalDateTime;
 
 public class Transaksi {
-    long nominal;
-    String kategori;
-    ArrayList<Riwayat> riwayat = new ArrayList<>();
+    private long nominal;
+    private ArrayList<Riwayat> riwayat = new ArrayList<>();
+    private ArrayList<Tabungan> tabungan = new ArrayList<>();
 
     Scanner scan = new Scanner(System.in);
 
+    public int mainMenu() {
+        System.out.println("== PROGRAM MANAGEMEN KEUANGAN PRIBADI ==");
+        System.out.println("1. Pemasukan");
+        System.out.println("2. Pengeluaran");
+        System.out.println("3. Cek Saldo");
+        System.out.println("4. Rencana Tabungan");
+        System.out.println("5. Analisis");
+        System.out.println("6. Riwayat");
+        System.out.println("0. Keluar");
+        System.out.print("Masukan pilihan anda: ");
+        int pil = scan.nextInt();
+        return pil;
+    }
+
     // ini pemasukan cuy!
-    void pemasukan() {
+     public void pemasukan() {
         long val;
         String sumber;
         LocalDateTime tanggal = LocalDateTime.now();
@@ -38,7 +52,7 @@ public class Transaksi {
     }
 
     // nah yang ini pengeluaran cuy
-    void pengeluaran(){
+    public void pengeluaran(){
         long val;
         String alasan;
         LocalDateTime tanggal = LocalDateTime.now();
@@ -78,7 +92,7 @@ public class Transaksi {
     }
 
     // bagian tampil riwayat sih
-    void tampilRiwayat() {
+    public void tampilRiwayat() {
         System.out.println("=== TAMPIL RIWAYAT ===");
         for(int i=0; i<riwayat.size(); i++){
             System.out.println("Transaksi ke        : " + (i+1));
@@ -101,7 +115,7 @@ public class Transaksi {
     }
 
     // fungsi untuk analisis, tapi lumyaan susah
-    void analisisHelper(long sum) {
+    public void analisisHelper(long sum) {
         if(sum == 0){
             System.out.println("Saldo Anda Tetap\n");
         } else if(sum > 0){
@@ -110,7 +124,7 @@ public class Transaksi {
             System.out.println("Saldo Anda Berkurang, Lebih Hemat!\n");
         }
     }
-    void analisis(){
+    public void analisis(){
         System.out.println("=== ANALISIS ===");
         if(riwayat.isEmpty()){
             System.out.println("Tidak ada Riwayat Transaksi\n");
@@ -155,4 +169,10 @@ public class Transaksi {
             analisisHelper(sum);
         }
     }
+
+    void rencanaTabungan() {
+        System.out.println("=== RENCANA TABUNGAN ===");
+
+    }
+
 }
